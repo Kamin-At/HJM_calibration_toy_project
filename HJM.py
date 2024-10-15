@@ -5,6 +5,10 @@ from scipy.optimize import minimize
 
 
 class HJM_Model:
+    # This class is the implementation of HJM models by combining simpler normal models, such as Hull-White and Ho-Lee, together.
+    # The calibration consists of 2 main steps, which are ...
+    # 1. Fit the consistent G function
+    # 2. Use the G function to generage the zcb curve for price calibration using caps
     def __init__(
         self,
         family: '(str) choose from ["HW", "HL", "MM"]',
