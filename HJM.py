@@ -9,6 +9,7 @@ class HJM_Model:
     # The calibration consists of 2 main steps, which are ...
     # 1. Fit the consistent G function
     # 2. Use the G function to generage the zcb curve for price calibration using caps
+    # See more details on Gaussian HJM.ipynb
     def __init__(
         self,
         family: '(str) choose from ["HW", "HL", "MM"]',
